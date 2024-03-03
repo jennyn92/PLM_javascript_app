@@ -1,0 +1,16 @@
+DONE:
+-Get input from user
+-make changes to HTML and (*CSS, not done yet) using JavaScript
+-use event to 
+
+
+To do:
+-Add delete button to corner of style container box.
+-Add more input text 
+-(*)Could onclick change colour to light and dark mode
+-Add picture(follow youtube tutorial.)
+
+
+To expand:
+Able to save data.
+Sort into collections.

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLM App</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="index.js"></script>
+    <h1 id="title-header">Style Board App</h1>
+</head>
+
+<body>
+    <div id="styleContainerWrapper"></div>
+        <div class = "style-container">
+            <div class="hero">
+                <div class="text-input">
+                    <label for ="text-input"></label>
+                    <input type="text" id="text-input" placeholder="Enter name of style here">
+                </div>
+                <div id="drop-area">
+                    <label for="input-file">
+                        <input type="file" accept="image/*" id="input-file" hidden>
+                        <div id="img-view">
+                            <img src="icon_upload.png">
+                            <p>Drag and drop or click here<br> to upload image </p>
+                            <span>Upload any images from desktop</span>
+                        
+                        </div>
+                    </label>
+            </div>
+        </div>
+    </div>
+    <button onclick="addStyleContainer()" id="addContainerButton">Add New Container</button>
+
+</body>
+</html>
+
+
