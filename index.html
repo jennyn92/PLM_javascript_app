@@ -5,34 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLM App</title>
     <link rel="stylesheet" href="styles.css"> 
-    <script src="index.js"></script>
-    <h1 id="title-header">Style Board App</h1>
 </head>
-
 <body>
-    <div id="styleContainerWrapper"></div>
-        <div class = "style-container">
-            <div class="hero">
-                <div class="text-input">
-                    <label for ="text-input"></label>
-                    <input type="text" id="text-input" placeholder="Enter name of style here">
-                </div>
-                <div id="drop-area">
-                    <label for="input-file">
-                        <input type="file" accept="image/*" id="input-file" hidden>
-                        <div id="img-view">
-                            <img src="icon_upload.png">
-                            <p>Drag and drop or click here<br> to upload image </p>
-                            <span>Upload any images from desktop</span>
-                        
+    <div class="wrapper">
+        <div class="sidebar">
+            <p>MENU</p>
+            <br>
+            <p>- Collections</p>
+
+        </div>
+    
+        <div class="main-content">
+            <h1 id="title-header">Style Board App</h1>
+            <div id="styleContainerWrapper">
+                <div class="style-container">
+                    <div class="hero">
+                        <div class="text-input">
+                            <label for ="text-input">Style Name</label>
+                            <input type="text" id="text-input" placeholder="Enter name of style here">
                         </div>
-                    </label>
+                        <div id="drop-area">
+                            <label for="input-file">
+                                <input type="file" accept="image/*" id="input-file" hidden>
+                                <div id="img-view">
+                                    <img src="icon_upload.png">
+                                    <p>Drag and drop or click here<br> to upload image </p>
+                                    <span>Upload any images from desktop</span>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="text-input">
+                            <label for="text-input-2">Collection</label>
+                            <input type="text" id="text-input-2" placeholder="Enter text here">
+                        </div>
+                        <div class="text-input">
+                            <label for="text-input-3">Clothing Category</label>
+                            <input type="text" id="text-input-3" placeholder="Enter text here">
+                        </div>
+                        <div class="text-input">
+                            <label for="text-input-4">SKU Code</label>
+                            <input type="text" id="text-input-4" placeholder="Enter text here">
+                        </div>
+                    </div>
+                </div>
             </div>
+            <button onclick="addStyleContainer()" id="addContainerButton">Add New Container</button>
         </div>
     </div>
-    <button onclick="addStyleContainer()" id="addContainerButton">Add New Container</button>
-
+    <script src="index.js"></script> 
 </body>
 </html>
-
-
